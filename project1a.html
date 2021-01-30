@@ -5,57 +5,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9aa33d04bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <title>10 Must-Read Tech Sites to Stay Updated</title>
 </head>
 
 <body>
     <section>
-        <nav>
-            <img src="https://cdn.lifehack.org/wp-content/themes/v6/images/lifehack-main-logo.png" alt="logo">
-            <select name="cc" id="curchal">
-                <option value="current">Your Current Challeng</option>
-                <option value="stuck">Feeling Stuck in Life</option>
-                <option value="strugle">Struggling To Reach My Goals</option>
-                <option value="lack">Lack of Motivation</option>
-                <option value="distract">Getting Distracted Easily</option>
-                <option value="slow">Learning Slowly</option>
-                <option value="buys">Too Busy To Get Fit</option>
-            </select>
-            <select name="courses" id="course-select">
-                <option value="master">Mastercourses</option>
-                <option value="free">Free Classes</option>
-            </select>
-            <a href="">About</a>
-            <a href="">Lifehack Show</a>
-            <select name="blog" id="blog">
-                <a href="test.com" <option value="blog">Blog</option></a>
-                <option value="motivate">Motivation</option>
-                <option value="productive">Productivity</option>
-                <option value="work">Work</option>
-                <option value="success">Success</option>
-                <option value="communication">Communication</option>
-                <option value="happy">Happiness</option>
-                <option value="fit">Fitness</option>
-                <option value="health">Health</option>
-                <option value="parent">Parenting</option>
-                <option value="relation">Relationships</option>
-                <option value="money">Money</option>
-            </select>
-            <button>Subscribe</button>
+        <nav id="navbar">
+            <img id="lhlogo" src="https://cdn.lifehack.org/wp-content/themes/v6/images/lifehack-main-logo.png"
+                alt="logo">
+            <div class="leftlinks">
+                <div class="dropdown">
+                    <button class="dropbtn">Your Current Challenge</button>
+                    <div class="dropdown-content">
+                        <a href="https://www.lifehack.org/start-here">Feeling Stuck in Life</a>
+                        <a href="https://www.lifehack.org/achieving-goals">Struggling To Reach My Goals</a>
+                        <a href="https://www.lifehack.org/how-to-get-motivated">Lack of Motivation</a>
+                        <a href="https://www.lifehack.org/how-to-focus">Getting Distracted Easily</a>
+                        <a href="https://www.lifehack.org/learn-faster">Learning Slowly</a>
+                        <a href="https://www.lifehack.org/how-to-get-fit">Too Busy To Get Fit</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Courses</button>
+                    <div class="dropdown-content">
+                        <a href="https://www.lifehack.org/courses">Mastercourses</a>
+                        <a href="https://www.lifehack.org/free-classes">Free Classes</a>
+                    </div>
+                </div>
+
+                <a href="https://www.lifehack.org/about" class="dropbtn">About</a>
+                <a href="https://www.lifehack.org/about" class="dropbtn">Lifehack Show</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Blog</button>
+                    <div class="dropdown-content">
+                        <a href="https://www.lifehack.org/communication/motivation">Motivate</a>
+                        <a href="https://www.lifehack.org/productivity">Productivity</a>
+                        <a href="https://www.lifehack.org/work">Work</a>
+                        <a href="https://www.lifehack.org/productivity/success-productivity">Success</a>
+                        <a href="https://www.lifehack.org/communication">Communication</a>
+                        <a href="https://www.lifehack.org/communication/happiness-communication">Happiness</a>
+                        <a href="https://www.lifehack.org/lifestyle/fitness-2">Fitness</a>
+                        <a href="https://www.lifehack.org/lifestyle/health">Health</a>
+                        <a href="https://www.lifehack.org/parenting">Parenting</a>
+                        <a href="https://www.lifehack.org/communication/relationships">Relationships</a>
+                        <a href="https://www.lifehack.org/money">Money</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="rightlinks">
+                <span>Get Free Practical Tips, Case Studies & Quotes</span>
+                <button id="subscribe">Subscribe</button>
+            </div>
+            </div>
         </nav>
+
         <br>
-        <div>
-            <button>TECHNOLOGY</button>
-            <h1>10 Must-Read Tech Sites to Stay Updated</h1>
 
-            <img src="https://secure.gravatar.com/avatar/32b916320b9d4f47b7defe166d91c958?s=50&r=g" alt="author">
-            <a href="https://www.lifehack.org/author/larry-alton">Larry Alton</a>
-            <p>Business Consultant <button>Read full profile</button></p>
+        <div class="articles" >
 
-            <button <i class="fab fa-facebook-square"></i>Share</button><button <i
-                class="fab fa-pinterest"></i>PinIt</button><button <i class="fab fa-twitter"></i>Tweet</button><button
-                <i class="fab fa-linkedin"></i>Share</button><button <i class="far fa-envelope"></i>Email</button>
-            <p>Are you looking for the most credible voices in technology news? The rise of online publications and
+            <button class="techbutton">TECHNOLOGY</button>
+            <h1 id="subjectheading">10 Must-Read Tech Sites to Stay Updated</h1>
+            <div class="author">
+                <img id="lalton" src="https://secure.gravatar.com/avatar/32b916320b9d4f47b7defe166d91c958?s=50&r=g"
+                    alt="author">
+                <div class="signature">
+                    <a id="laProfile" href="https://www.lifehack.org/author/larry-alton">Larry Alton</a>
+
+                    <span id="jobtitle">Business Consultant <button id="readprofile">Read full profile</button></span>
+                </div>
+            </div>
+            <div class="socialmedia">
+                <button <i class="fab fa-facebook-square"></i>Share</button>
+                <button <i class="fab fa-pinterest"></i>PinIt</button>
+                <button <i class="fab fa-twitter"></i>Tweet</button>
+                <button <i class="fab fa-linkedin"></i>Share</button>
+                <button <i class="far fa-envelope"></i>Email</button>
+            </div>
+
+            <p id="leadIn">Are you looking for the most credible voices in technology news? The rise of online
+                publications and
                 blogs
                 has resulted in a flood of information regarding computers, mobile gadgets, software and operating
                 systems.
@@ -63,200 +96,241 @@
                 trusted
                 websites; these will help you keep up with the constant flow of technological updates.
             </p>
-        </div>
-        <div>
-            <h2>1. <a href="https://arstechnica.com/">Arstechnica.com</a></h2>
-            <img src="https://cdn.lifehack.org/wp-content/uploads/2015/01/sopa-screenshot-arstechnica-com.png"
-                alt="arstechnica">
-            <p>
-                First on the list is Ars Technica, simply because of the date of inception. This site has been around
-                for
-                nearly two decades, a very substantial amount of time. The publication, now owned by Conde Nast, is a
-                go-to for both tech professionals and hobbyists. Ars Technica features a wide range of news and
-                editorials, delving into business, legal ramifications, security, and other consumer interests.
-            </p>
-            <p>The dialogue isn’t a one-way street, either. Readers can interact with one another by checking out
-                the Ars Technica forums, which allow for discussions on hardware modifications, operations systems,
-                software and gaming. Ars Technica’s operations are funded primarily by online advertising and it has
-                been a paid subscription service since 2001.
-            </p>
-            <p>Interestingly, the website generated much controversy in 2009 when they prevented users who had installed
-                advertisement blocking software from viewing the site. While this stirred some negative reactions, the
-                site
-                continues to be a trusted resource today.
-            </p>
-        </div>
-        <br>
 
-        <div>
+            <div>
+                <h2>1. <a href="https://arstechnica.com/">Arstechnica.com</a></h2>
+                <img class="sitepics"
+                    src="https://cdn.lifehack.org/wp-content/uploads/2015/01/sopa-screenshot-arstechnica-com.png"
+                    alt="arstechnica">
+                <p>
+                    First on the list is Ars Technica, simply because of the date of inception. This site has been
+                    around
+                    for
+                    nearly two decades, a very substantial amount of time. The publication, now owned by Conde Nast, is
+                    a
+                    go-to for both tech professionals and hobbyists. Ars Technica features a wide range of news and
+                    editorials, delving into business, legal ramifications, security, and other consumer interests.
+                </p>
+                <p>The dialogue isn’t a one-way street, either. Readers can interact with one another by checking out
+                    the Ars Technica forums, which allow for discussions on hardware modifications, operations systems,
+                    software and gaming. Ars Technica’s operations are funded primarily by online advertising and it has
+                    been a paid subscription service since 2001.
+                </p>
+                <p>Interestingly, the website generated much controversy in 2009 when they prevented users who had
+                    installed
+                    advertisement blocking software from viewing the site. While this stirred some negative reactions,
+                    the
+                    site
+                    continues to be a trusted resource today.
+                </p>
+            </div>
+            <br>
 
-            <h2>2. <a href="http://techcrunch.com/">Techcrunch.com</a></h2>
-            <img src="https://cdn.lifehack.org/wp-content/uploads/2015/01/Screen-Shot-2015-01-08-at-1.34.42-PM.png"
-                alt="techcrunch">
-            <p>Second on the list is TechCrunch, thanks to the website’s more than 50,000 active contributors. If you
-                want
-                to get the scoop on technology startups, then TechCrunch is the news source for you. This publication
-                highlights the business side of tech innovation, covering major acquisitions, funding sources, and
-                product
-                launches. You can browse news based on brand names, such as Google, Apple, or Twitter. You can also sift
-                through news and reviews by tuning into different category channels like Enterprise, Startups, or
-                Mobile.
-            </p>
-            <p>One of the most compelling sections of Tech Crunch is Crunch Base, a vast database of technology
-                companies
-                and startups. Each Crunch Base profile includes financial details for each company, including funding
-                received, headquarters locations, and the names of the founders.
-            </p>
-            <p>In 2011, the company was accused of ethical violations and the founder, Michael Arrington, left the
-                company.
-                Fortunately, the company was able to bounce back, and still provides great technological updates for
-                consumers.
-            </p>
-        </div>
-        <br>
-        <div>
-            <h2>3. <a href="https://www.engadget.com/">Engadget.com</a></h2>
-            <img src="https://cdn.lifehack.org/wp-content/uploads/2015/01/Screen-Shot-2015-01-08-at-1.36.38-PM.png"
-                alt="engadget">
-            <p>Engadget makes number three on our list, because it’s a great multilingual resource. Impressively, this
-                resource has been helping people make informed tech purchasing decisions since 2004. It’s no surprise
-                that
-                the collection of blogs on Engadget have had such success, since it was created by a co-founder of
-                Gizmodo,
-                Peter Rojas.
-            </p>
-            <p>Interestingly, the editorial team involved in steering Engadget to fame has moved on to pursue several
-                other
-                successful endeavors. For example, former Engadget editor-in-chief, Joshua Topolsky, went on to create
-                The
-                Verge, followed by an editorial role at Bloomberg.
-            </p>
-        </div>
-        <br>
-        <div>
-            <h2>4. <a href="http://thenextweb.com/">Thenextweb.com</a></h2>
-            <img src="https://cdn.lifehack.org/wp-content/uploads/2015/01/Screen-Shot-2015-01-08-at-1.37.50-PM.png"
-                alt="thenextweb">
-            <p>The Next Web makes the next spot on our list, because of their more than 6.5 million unique monthly
-                visitors.
-                This site is constantly looking at the newest gadgets, web app updates, and service features. Get the
-                head
-                start you need on the latest tech updates, and if you are looking to make a new gadget purchase, check
-                out
-                The Next Web first. They will let you know if something better is coming out shortly!
-            </p>
-            <p>Unlike many other tech websites, The Next Web has been able to avoid controversy and continues to thrive
-                drama-free today.
-            </p>
-        </div>
-        <br>
-        <div>
-            <h2>5. <a href="https://www.wired.com/">Wired.com</a></h2>
-            <img src="https://cdn.lifehack.org/wp-content/uploads/2015/01/Screen-Shot-2015-01-08-at-1.39.22-PM.png"
-                alt="wired">
-            <p>We love this website because it came from a popular magazine! Coming in at number five on our list, this
-                website split from Wired Magazine in 1990, when it was purchased by Conde Nast Publishing.
-            </p>
-            <p>This publication deals with the popular culture surrounding technology. If you’re looking for an
-                engaging,
-                yet casual read, this website is for you. Wired features entertainment, opinion, business, and security
-                news
-                regarding electronics of all kinds. Furthermore, if you’re interested in an old-school paper and ink
-                experience, you can still buy a copy of Wired magazine on newsstands.
-            </p>
-        </div>
-        <br>
-        <div>
-            <h2>6. <a href="https://www.tomshardware.com/">Tomshardware.com</a></h2>
-            <img src="https://cdn.lifehack.org/wp-content/uploads/2015/01/Screen-Shot-2015-01-08-at-1.40.23-PM.png"
-                alt="tomshardware">
-            <p>Tom’s Hardware makes the next spot on our list of trustworthy websites, because it’s been around since
-                1996.
-                If you’re looking for a site that can help with projects, then check this one out. Tom’s Hardware
-                features a
-                unique “build your own” section, where you can learn how to build your own computer.
-            </p>
-            <p>Anyone who’s replaced a computer part or built a PC will tell you how difficult it is to track reviews,
-                part
-                upgrades, and the latest sales. Furthermore, seasoned hardware tinkerers are faced with a dizzying array
-                of
-                components to choose from.
-            </p>
-            <p>Fortunately, Tom’s Hardware helps you cut through the noise and get sound advice on computer parts, from
-                tower cases to motherboards. As stated above, this is the ultimate resource if you’re thinking about
-                building a computer, particularly for gaming.
-            </p>
-        </div>
-        <br>
-        <div>
-            <h2>7. <a href="https://www.cnet.com/">Cnet.com</a></h2>
-            <img src="https://cdn.lifehack.org/wp-content/uploads/2015/01/Screen-Shot-2015-01-08-at-1.41.38-PM.png"
-                alt="Cnet">
-            <p>Next on the list is CNET, because we like their region-specific and language-specific editions. Early
-                consumers loved CNET because of their enormous library of freeware and software reviews, available
-                through
-                the CNET download section.
-            </p>
-            <p>This publication has been around since 1994, and owned by The CBS Corporation since 2008. Reviews make up
-                the
-                majority of content on CNET, helping consumers choose the best hardware, software, and tech services.
-            </p>
-            <p>Remember Limewire? CNET has been accused of having a part in the controversial music sharing program, but
-                a
-                lawsuit from 2011 has yet to go anywhere.
-            </p>
-        </div>
-        <br>
-        <div>
-            <h2>8. <a href="https://9to5mac.com/">9to5Mac.com</a></h2>
-            <img src="https://cdn.lifehack.org/wp-content/uploads/2015/01/Screen-Shot-2015-01-08-at-1.42.54-PM.png"
-                alt="9to5">
-            <p>Number eight on the list is 9 to 5 Mac, solely because it was founded only seven short years ago. The
-                website
-                is very impressive, however, and covers more than just Apple products. They provide information on
-                thousands
-                of accessories that are compatible with the Mac OS X and iOS platforms.
-            </p>
-            <p> This platform is considered one of the most reliable sources for Apple-relevant news, and it’s founding
-                team
-                has
-                been in <a
-                    href="http://www.businessinsider.com/the-9to5mac-story-seth-weintraub-mark-gurman-2014-10">featured
-                    in
-                    Business Insider</a>.
-            </p>
-        </div>
-        <br>
-        <div>
-            <h2>9. <a href="https://gizmodo.com/">Gizmodo.com</a></h2>
-            <img src="https://cdn.lifehack.org/wp-content/uploads/2015/01/Screen-Shot-2015-01-08-at-1.44.39-PM.png"
-                alt="gizmodo">
-            <p>Coming in towards the end of our list because it was founded just a little over a decade ago, Gizmodo is
-                a
-                prime example of how powerful crowd sourced information and blogging can be. This publication is part of
-                the
-                Gawker Media network, a family of blogs that includes Lifehacker, Deadspin, and Jezebel.
-            </p>
-            <p>These blogs are all powered by Kinja, which enables any user, including readers, to contribute to the
-                discussion with their very own blog posts. This blurs the line between bloggers and readers, encouraging
-                more people to contribute their voices to the news feed.
-            </p>
-        </div>
-        <br>
-        <div>
-            <h2>10. <a href="http://bits.blogs.nytimes.com/">NewYorkTimes.com</a></h2>
-            <img src="https://cdn.lifehack.org/wp-content/uploads/2015/01/Screen-Shot-2015-01-08-at-1.45.56-PM.png"
-                alt="nyt">
-            <p>Lastly,we have Bits: The Business of Technology from the New York Times. This newspaper is a leading
-                resource
-                for various information; so it’s no surprise that this long-standing publication has created a blog
-                dedicated to technology!
-            </p>
-            <p>Bits gathers information from every corner of the Internet, and NY Times writers weigh in on new product
-                launches, tech conventions, and upcoming gadget developments. With so many active contributors, and such
-                an
-                impressive host, it’s no wonder why Bits needed to make our list of the top tech websites.
-            </p>
+            <div>
+
+                <h2>2. <a href="http://techcrunch.com/">Techcrunch.com</a></h2>
+                <img class="sitepics"
+                    src="https://cdn.lifehack.org/wp-content/uploads/2015/01/Screen-Shot-2015-01-08-at-1.34.42-PM.png"
+                    alt="techcrunch">
+                <p>Second on the list is TechCrunch, thanks to the website’s more than 50,000 active contributors. If
+                    you
+                    want
+                    to get the scoop on technology startups, then TechCrunch is the news source for you. This
+                    publication
+                    highlights the business side of tech innovation, covering major acquisitions, funding sources, and
+                    product
+                    launches. You can browse news based on brand names, such as Google, Apple, or Twitter. You can also
+                    sift
+                    through news and reviews by tuning into different category channels like Enterprise, Startups, or
+                    Mobile.
+                </p>
+                <p>One of the most compelling sections of Tech Crunch is Crunch Base, a vast database of technology
+                    companies
+                    and startups. Each Crunch Base profile includes financial details for each company, including
+                    funding
+                    received, headquarters locations, and the names of the founders.
+                </p>
+                <p>In 2011, the company was accused of ethical violations and the founder, Michael Arrington, left the
+                    company.
+                    Fortunately, the company was able to bounce back, and still provides great technological updates for
+                    consumers.
+                </p>
+            </div>
+            <br>
+            <div>
+                <h2>3. <a href="https://www.engadget.com/">Engadget.com</a></h2>
+                <img class="sitepics"
+                    src="https://cdn.lifehack.org/wp-content/uploads/2015/01/Screen-Shot-2015-01-08-at-1.36.38-PM.png"
+                    alt="engadget">
+                <p>Engadget makes number three on our list, because it’s a great multilingual resource. Impressively,
+                    this
+                    resource has been helping people make informed tech purchasing decisions since 2004. It’s no
+                    surprise
+                    that
+                    the collection of blogs on Engadget have had such success, since it was created by a co-founder of
+                    Gizmodo,
+                    Peter Rojas.
+                </p>
+                <p>Interestingly, the editorial team involved in steering Engadget to fame has moved on to pursue
+                    several
+                    other
+                    successful endeavors. For example, former Engadget editor-in-chief, Joshua Topolsky, went on to
+                    create
+                    The
+                    Verge, followed by an editorial role at Bloomberg.
+                </p>
+            </div>
+            <br>
+            <div>
+                <h2>4. <a href="http://thenextweb.com/">Thenextweb.com</a></h2>
+                <img class="sitepics"
+                    src="https://cdn.lifehack.org/wp-content/uploads/2015/01/Screen-Shot-2015-01-08-at-1.37.50-PM.png"
+                    alt="thenextweb">
+                <p>The Next Web makes the next spot on our list, because of their more than 6.5 million unique monthly
+                    visitors.
+                    This site is constantly looking at the newest gadgets, web app updates, and service features. Get
+                    the
+                    head
+                    start you need on the latest tech updates, and if you are looking to make a new gadget purchase,
+                    check
+                    out
+                    The Next Web first. They will let you know if something better is coming out shortly!
+                </p>
+                <p>Unlike many other tech websites, The Next Web has been able to avoid controversy and continues to
+                    thrive
+                    drama-free today.
+                </p>
+            </div>
+            <br>
+            <div>
+                <h2>5. <a href="https://www.wired.com/">Wired.com</a></h2>
+                <img class="sitepics"
+                    src="https://cdn.lifehack.org/wp-content/uploads/2015/01/Screen-Shot-2015-01-08-at-1.39.22-PM.png"
+                    alt="wired">
+                <p>We love this website because it came from a popular magazine! Coming in at number five on our list,
+                    this
+                    website split from Wired Magazine in 1990, when it was purchased by Conde Nast Publishing.
+                </p>
+                <p>This publication deals with the popular culture surrounding technology. If you’re looking for an
+                    engaging,
+                    yet casual read, this website is for you. Wired features entertainment, opinion, business, and
+                    security
+                    news
+                    regarding electronics of all kinds. Furthermore, if you’re interested in an old-school paper and ink
+                    experience, you can still buy a copy of Wired magazine on newsstands.
+                </p>
+            </div>
+            <br>
+            <div>
+                <h2>6. <a href="https://www.tomshardware.com/">Tomshardware.com</a></h2>
+                <img class="sitepics"
+                    src="https://cdn.lifehack.org/wp-content/uploads/2015/01/Screen-Shot-2015-01-08-at-1.40.23-PM.png"
+                    alt="tomshardware">
+                <p>Tom’s Hardware makes the next spot on our list of trustworthy websites, because it’s been around
+                    since
+                    1996.
+                    If you’re looking for a site that can help with projects, then check this one out. Tom’s Hardware
+                    features a
+                    unique “build your own” section, where you can learn how to build your own computer.
+                </p>
+                <p>Anyone who’s replaced a computer part or built a PC will tell you how difficult it is to track
+                    reviews,
+                    part
+                    upgrades, and the latest sales. Furthermore, seasoned hardware tinkerers are faced with a dizzying
+                    array
+                    of
+                    components to choose from.
+                </p>
+                <p>Fortunately, Tom’s Hardware helps you cut through the noise and get sound advice on computer parts,
+                    from
+                    tower cases to motherboards. As stated above, this is the ultimate resource if you’re thinking about
+                    building a computer, particularly for gaming.
+                </p>
+            </div>
+            <br>
+            <div>
+                <h2>7. <a href="https://www.cnet.com/">Cnet.com</a></h2>
+                <img class="sitepics"
+                    src="https://cdn.lifehack.org/wp-content/uploads/2015/01/Screen-Shot-2015-01-08-at-1.41.38-PM.png"
+                    alt="Cnet">
+                <p>Next on the list is CNET, because we like their region-specific and language-specific editions. Early
+                    consumers loved CNET because of their enormous library of freeware and software reviews, available
+                    through
+                    the CNET download section.
+                </p>
+                <p>This publication has been around since 1994, and owned by The CBS Corporation since 2008. Reviews
+                    make up
+                    the
+                    majority of content on CNET, helping consumers choose the best hardware, software, and tech
+                    services.
+                </p>
+                <p>Remember Limewire? CNET has been accused of having a part in the controversial music sharing program,
+                    but
+                    a
+                    lawsuit from 2011 has yet to go anywhere.
+                </p>
+            </div>
+            <br>
+            <div>
+                <h2>8. <a href="https://9to5mac.com/">9to5Mac.com</a></h2>
+                <img class="sitepics"
+                    src="https://cdn.lifehack.org/wp-content/uploads/2015/01/Screen-Shot-2015-01-08-at-1.42.54-PM.png"
+                    alt="9to5">
+                <p>Number eight on the list is 9 to 5 Mac, solely because it was founded only seven short years ago. The
+                    website
+                    is very impressive, however, and covers more than just Apple products. They provide information on
+                    thousands
+                    of accessories that are compatible with the Mac OS X and iOS platforms.
+                </p>
+                <p> This platform is considered one of the most reliable sources for Apple-relevant news, and it’s
+                    founding
+                    team
+                    has
+                    been in <a
+                        href="http://www.businessinsider.com/the-9to5mac-story-seth-weintraub-mark-gurman-2014-10">featured
+                        in
+                        Business Insider</a>.
+                </p>
+            </div>
+            <br>
+            <div>
+                <h2>9. <a href="https://gizmodo.com/">Gizmodo.com</a></h2>
+                <img class="sitepics"
+                    src="https://cdn.lifehack.org/wp-content/uploads/2015/01/Screen-Shot-2015-01-08-at-1.44.39-PM.png"
+                    alt="gizmodo">
+                <p>Coming in towards the end of our list because it was founded just a little over a decade ago, Gizmodo
+                    is
+                    a
+                    prime example of how powerful crowd sourced information and blogging can be. This publication is
+                    part of
+                    the
+                    Gawker Media network, a family of blogs that includes Lifehacker, Deadspin, and Jezebel.
+                </p>
+                <p>These blogs are all powered by Kinja, which enables any user, including readers, to contribute to the
+                    discussion with their very own blog posts. This blurs the line between bloggers and readers,
+                    encouraging
+                    more people to contribute their voices to the news feed.
+                </p>
+            </div>
+            <br>
+            <div>
+                <h2>10. <a href="http://bits.blogs.nytimes.com/">NewYorkTimes.com</a></h2>
+                <img class="sitepics"
+                    src="https://cdn.lifehack.org/wp-content/uploads/2015/01/Screen-Shot-2015-01-08-at-1.45.56-PM.png"
+                    alt="nyt">
+                <p>Lastly,we have Bits: The Business of Technology from the New York Times. This newspaper is a leading
+                    resource
+                    for various information; so it’s no surprise that this long-standing publication has created a blog
+                    dedicated to technology!
+                </p>
+                <p>Bits gathers information from every corner of the Internet, and NY Times writers weigh in on new
+                    product
+                    launches, tech conventions, and upcoming gadget developments. With so many active contributors, and
+                    such
+                    an
+                    impressive host, it’s no wonder why Bits needed to make our list of the top tech websites.
+                </p>
+            </div>
         </div>
 
     </section>
@@ -264,26 +338,35 @@
 <footer>
 
 
+    <ul class="leftfootop">
+        <li> <a class="toplinks" href="https://www.lifehack.org/about">About</a></li>
+        <li> <a class="toplinks" href="https://www.lifehack.org/contribute">Write for Us</a></li>
+        <li> <a class="toplinks" href="https://www.lifehack.org/contact">Contact Us</a></li>
+        <li> <a href="https://www.lifehack.org/feed"><i class="fas fa-rss"></i></a></li>
+        <li> <a href="https://instagram.com/lifehackorg"><i class="fab fa-instagram"></i></a></li>
+        <li> <a href="https://www.youtube.com/user/LifehackOrg/"><i class="fab fa-youtube-square"></i></a></li>
+        <li> <a href="https://pinterest.com/lifehack/"><i class="fab fa-pinterest"></i></a></li>
+        <li> <a href="https://twitter.com/lifehackorg/"><i class="fab fa-twitter"></i></a></li>
+        <li> <a href="https://www.facebook.com/lifehackorg/"><i class="fab fa-facebook-square"></i></a></li>
+       
+
+    </ul>
+    <ul class="leftfootbottom">
+        <li> <a href="https://www.lifehack.org/about/terms-and-conditions">Terms and
+                Conditions</a></li>
+        <li> <a href="https://www.lifehack.org/privacypolicy">Privacy Policy</a></li>
+        <li>&copy;2005 - 2021 Lifehack . All Rights Reserved</li>
+    </ul>
+
+
+
+    </div>
+
 
 </footer>
 
-<div>
-    <a href="https://www.lifehack.org/about">About</a>
-    <a href="https://www.lifehack.org/contribute">Write for Us</a>
-    <a href="https://www.lifehack.org/contact">Contact Us</a>
-    <a href="https://www.lifehack.org/about/terms-and-conditions">Terms and Conditions</a>
-    <a href="https://www.lifehack.org/privacypolicy">Privacy Policy</a>
-</div>
-<div>
-    <a href="https://www.facebook.com/lifehackorg/">fb</a>
-    <a href="https://twitter.com/lifehackorg/">twi</a>
-    <a href="https://pinterest.com/lifehack/">pin</a>
-    <a href="https://www.youtube.com/user/LifehackOrg/">yt</a>
-    <a href="https://instagram.com/lifehackorg">ig</a>
-    <a href="https://www.lifehack.org/feed">rss</a>
 
-    <p>&copy;2005 - 2021 Lifehack . All Rights Reserved</p>
 
-</div>
+
 
 </html>

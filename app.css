@@ -1,0 +1,372 @@
+
+#navbar {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin: none;
+    line-height: 2em;
+}
+
+.rightlinks {
+    margin-left: auto;
+}
+
+.rightlinks span {
+    color: rgb(45, 44, 44);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+#subscribe {
+   background-color:rgb(20, 164, 20);
+    border-radius: 2em;
+    border: none;
+    padding:6px 16px;
+    color: rgb(255, 255, 255);
+}
+
+#lhlogo {
+    width: 6em;
+    margin-right: 1em;
+    margin-bottom: 0em;
+    padding: 1px 2px;
+}
+
+.dropbtn {
+    background-color: rgb(255, 255, 255);
+    color: rgb(9, 19, 121);
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 300;
+    margin-right: 8px;
+} 
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    font-size: 13px;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: none;
+    
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(4, 11, 63);
+    color:white;
+    font-size: 13px;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: black;
+}
+
+.dropbtn:hover {
+    color: black;
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 1px 6px; 
+}
+
+
+.articles {
+    /* display: flex; */
+    margin: 2em 3em 0 15em;
+    width: 500px;
+  
+    /* justify-content: center; */
+}
+
+.articles p {
+    line-height: 150%;
+    font-size: 16px;
+}
+
+#leadIn {
+
+    font-size: 16px;
+}
+
+h2 a {
+
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: rgb(26, 77, 139);
+
+}
+
+.sitepics {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+}
+
+.techbutton {
+    display: block;
+    background-color: rgb(26, 77, 139);
+    color: white;
+    font-size: 10px;
+    padding: 5px 5px;
+}
+
+#subjectheading {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#lalton {
+    border-radius: 80%;
+    padding: 0 8px 0 0 ;
+
+}
+
+.author {
+    display: flex;
+}
+
+#laProfile {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    color: rgb(38, 86, 145);
+}
+
+#laProfile:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.signature {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#jobtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(97, 106, 114);
+    font-size: 10px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#readprofile {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2em;
+    border: none;
+    font-size: 10px;
+    color: rgb(36, 84, 143);
+    background-color: rgb(217, 222, 226);
+}
+
+
+.socialmedia  {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.socialmedia button {
+ 
+    width: 150px;
+    height: 30px;
+    margin-top: 2em;
+    margin-right: 1px;
+    border: none;
+    font-size: 10px;
+}
+
+.fab {
+    color: white;
+}
+.far {
+    color: white;
+}
+
+.fa-facebook-square {
+    background-color: rgb(52, 79, 141);
+}
+
+.fa-pinterest {
+    background-color: rgb(181, 12, 26);
+}
+
+.fa-twitter {
+    background-color: rgb(27, 151, 240);
+}
+
+.fa-linkedin {
+    background-color: rgb(0, 112, 172);
+}
+
+.fa-envelope {
+    background-color: rgb(97, 106, 114);;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: rgb(36, 47, 61);
+    border: none;
+    height: 200px;
+}
+
+
+
+.leftfootop {
+    
+    height: 150px;
+    padding-top: 2em;
+    margin-right: 225px;
+    margin-left:300px;
+}
+
+footer li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: rgb(207, 212, 219);
+    display: inline-block;
+    text-align: left;
+    padding:3px;
+   
+}
+
+footer a {
+    color: rgb(207, 212, 219);
+    text-decoration: none;
+}
+.toplinks:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+.leftfootbottom {
+    margin-left: 300px;
+    margin-right: 225px;
+}
+
+.leftfootbottom  li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom:  2em;
+    
+}
+
+footer li:nth-child(4) {
+    float: right;
+
+}
+footer li:nth-child(5) {
+    float: right;
+
+}
+footer li:nth-child(6) {
+    float: right;
+
+}
+footer li:nth-child(7) {
+    float: right;
+
+}
+footer li:nth-child(8) {
+    float: right;
+
+}
+
+footer li:nth-child(9) {
+    float: right;
+}
+
+.leftfootbottom li:nth-child(3) {
+    float: right;
+}
+
+footer .fab {
+    font-size: 25px;
+    padding-right: 1.2em;
+    color: rgb(207, 212, 219);
+}
+footer .fas {
+    font-size: 25px;
+}
+footer .fab:hover {
+    font-size: 25px;
+    padding-right: 1.2em;
+    color: white;
+}
+footer .fas:hover {
+    font-size: 25px;
+    color: white;
+}
+
+footer .fa-twitter {
+    background-color: rgba(255, 0, 0, 0);
+}
+footer .fa-pinterest {
+    background-color: rgba(255, 0, 0, 0);
+}
+footer .fa-facebook-square {
+    background-color: rgba(255, 0, 0, 0);
+}
+
+
+@media (min-width: 0) and (max-width:800px) {
+    .socialmedia .fab {
+       height: 40px;
+
+    } 
+    
+@media (min-width: 0) and (max-width:800px) {
+    .socialmedia .far {
+       height: 40px;
+    } 
+    
+@media (min-width: 0) and (max-width:800px) { 
+    .articles  {
+        margin-left: 1.3em;
+    } 
+    
+    @media (min-width: 0) and (max-width:800px) { 
+    .navbar  {
+        display: flex;
+        flex-direction: column;
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
+
