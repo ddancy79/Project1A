@@ -184,12 +184,35 @@ h2 a {
     background-color: rgb(217, 222, 226);
 }
 
+#readprofile a {
+    text-decoration: none;
+    color:rgb(43, 87, 145)
+}
+    
+#readprofile:hover {
+    text-decoration: none;
+    background-color:rgb(43, 87, 145);
+}
+
+#readprofile a:hover {
+    text-decoration: none;
+    background-color: rgb(26, 77, 139);
+    color:rgb(255, 255, 255)
+}
+
 
 .socialmedia  {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
+.socialmedia a {
+    color:white;
+    text-decoration: none;
+}
+
+
 
 .socialmedia button {
  
